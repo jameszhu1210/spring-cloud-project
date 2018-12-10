@@ -10,7 +10,7 @@ sourceCompatibility = 1.8
 buildscript {
     ext {
         springBootVersion = '1.5.9.RELEASE'
-        springCloudVersion = 'Finchley.SR1'
+        springCloudVersion = 'Edgware.SR5'
     }
     repositories {
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
