@@ -1,11 +1,5 @@
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
-
 group = 'com.zhy'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
 
 buildscript {
     ext {
@@ -44,9 +38,16 @@ subprojects {
     apply plugin: 'org.springframework.boot'
     //A Gradle plugin that provides Maven-like dependency management functionality
     apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'application'
+
+    sourceCompatibility = 1.8
+
     dependencies {
         compile ('org.springframework.boot:spring-boot-starter-web')
-        
+        compile('org.springframework.boot:spring-boot-starter-actuator')
+        compile 'org.projectlombok:lombok:1.16.8'
+        compile 'org.springframework.hateoas:spring-hateoas:0.23.0.RELEASE'
+
     }
     dependencyManagement {
         imports {

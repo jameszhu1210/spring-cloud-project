@@ -1,3 +1,4 @@
 rootProject.name = 'study'
 include 'eureka-server'
 include 'frdt-ws'
+include 'feign-consumer'
