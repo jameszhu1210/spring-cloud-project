@@ -47,7 +47,8 @@ subprojects {
         compile('org.springframework.boot:spring-boot-starter-actuator')
         compile 'org.projectlombok:lombok:1.16.8'
         compile 'org.springframework.hateoas:spring-hateoas:0.23.0.RELEASE'
-
+        testCompile("junit:junit")
+        testCompile('org.springframework.boot:spring-boot-starter-test')
     }
     dependencyManagement {
         imports {
